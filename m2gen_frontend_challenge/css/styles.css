@@ -38,10 +38,113 @@
   margin-top: 3.571em;
 }
 
+.p-0 {
+  padding: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pr-10 {
+  padding-right: 0.714em;
+}
+
+.pr-20 {
+  padding-right: 1.429em;
+}
+
+.pr-30 {
+  padding-right: 2.143em;
+}
+
+.pr-40 {
+  padding-right: 2.857em;
+}
+
+.pr-50 {
+  padding-right: 3.571em;
+}
+
+.pt-10 {
+  padding-top: 0.714em;
+}
+
+.pt-20 {
+  padding-top: 1.429em;
+}
+
+.pt-30 {
+  padding-top: 2.143em;
+}
+
+.pt-40 {
+  padding-top: 2.857em;
+}
+
+.pt-50 {
+  padding-top: 3.571em;
+}
+
+.pl-10 {
+  padding-left: 0.714em;
+}
+
+.pl-20 {
+  padding-left: 1.429em;
+}
+
+.pl-30 {
+  padding-left: 2.143em;
+}
+
+.pl-40 {
+  padding-left: 2.857em;
+}
+
+.pl-50 {
+  padding-left: 3.571em;
+}
+
+.pb-10 {
+  padding-bottom: 0.714em;
+}
+
+.pb-20 {
+  padding-bottom: 1.429em;
+}
+
+.pb-30 {
+  padding-bottom: 2.143em;
+}
+
+.pb-40 {
+  padding-bottom: 2.857em;
+}
+
+.pb-50 {
+  padding-bottom: 3.571em;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 nav.navbar-default {
@@ -117,7 +220,7 @@ nav.navbar-default div.container div#navbar ul.nav li {
 
 section.highlight div.container h1.big-header {
   font-weight: 900;
-  font-size: 6em;
+  font-size: 5em;
   margin: 0;
   border: 8px solid #333333;
   letter-spacing: -4px;
@@ -235,11 +338,50 @@ div.card-content div.details span.price-container span.display-price {
 }
 
 footer.main-footer {
-  padding: 4em 0 2em;
   position: relative;
   z-index: 2;
   background-color: black;
   color: white;
   font-size: .8125em;
   line-height: 1.538461538;
+}
+
+footer.main-footer div.container h3.footer-nav-header {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #1ab095;
+}
+
+footer.main-footer div.container h3.footer-nav-featured-header {
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-align: center;
+  border-top: 0.2em solid #1ab095;
+  border-right: 0.2em solid #1ab095;
+  border-bottom: 0.2em solid #1ab095;
+}
+
+footer.main-footer div.container figure.featured-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer.main-footer div.container #footer-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+footer.main-footer div.container ul.nav li a {
+  color: #fff;
+  padding: 0.1em;
+}
+
+footer.main-footer div.container ul.nav li a:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }

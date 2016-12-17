@@ -19,6 +19,11 @@ module.exports = {
         loader: "style-loader!css-loader!less-loader"
       },
       {
+    test: /\.styl$/,
+    exclude: /node_modules/,
+      loader: 'style!css?sourceMap!stylus?resolve url',
+},
+      {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
         // loader: ExtractTextPlugin.extract("style-loader", "css-loader")

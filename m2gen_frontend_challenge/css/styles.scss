@@ -5,6 +5,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 nav.navbar-default {
@@ -113,7 +116,7 @@ section.highlight {
   div.container {
     h1.big-header {
       font-weight: 900;
-      font-size: 6em;
+      font-size: 5em;
       margin: 0;
       border: 8px solid #333333;
       letter-spacing: -4px;
@@ -237,8 +240,11 @@ div.card-content {
   }
 }
 
+
+
+//FOOTER ------------------------------------------------
 footer.main-footer {
-  padding: 4em 0 2em;
+  // padding: 4em 0 2em;
   position: relative;
   z-index: 2;
   background-color: black;
@@ -247,6 +253,54 @@ footer.main-footer {
   line-height: 1.538461538;
 
   div.container {
+    h3.footer-nav-header {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: $teal-green;
 
+    }
+
+    h3.footer-nav-featured-header {
+      font-size: 4em;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      text-align: center;
+      border-top: 0.2em solid  $teal-green;
+      border-right: 0.2em solid  $teal-green;
+      border-bottom: 0.2em solid  $teal-green;
+    }
+
+    figure.featured-section {
+      img {
+        display:block;
+        width: 100%;
+        height: auto;
+      }
+      figcaption {
+
+      }
+    }
+
+    #footer-logo {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    ul.nav {
+      li {
+        a {
+            color: #fff;
+            padding: 0.1em;
+
+            &:hover {
+              background-color: transparent;
+              text-decoration: underline;
+            }
+        }
+      }
+    }
   }
 }
