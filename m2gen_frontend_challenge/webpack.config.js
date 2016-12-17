@@ -9,11 +9,11 @@ module.exports = {
 
   module: {
     loaders: [
-      {
-        test: /\.scss/,
-        exclude: /node_modules/,
-        loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap&includePaths[]=node_modules/compass-mixins/lib'
-      },
+      // {
+      //   test: /\.scss/,
+      //   exclude: /node_modules/,
+      //   loader: 'style!css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap&includePaths[]=node_modules/compass-mixins/lib'
+      // },
       {
         test: /\.less$/,
         loader: "style-loader!css-loader!less-loader"
@@ -23,16 +23,16 @@ module.exports = {
         loader: 'style-loader!css-loader'
         // loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
-      // {
-      //   test: /\.scss$/,
-      //   // loader: ExtractTextPlugin.extract('css!sass')
-      //   // loader: "css-loader!sass-loader"
-      //   loader: ExtractTextPlugin.extract(
-      //       'style', // The backup style loader
-      //       'css?sourceMap!sass?sourceMap'
-      //       // 'css!sass' // loaders to preprocess CSS
-      //   )
-      // },
+      {
+        test: /\.scss$/,
+        // loader: ExtractTextPlugin.extract('css!sass')
+        // loader: "css-loader!sass-loader"
+        loader: ExtractTextPlugin.extract(
+            'style', // The backup style loader
+            'css?sourceMap!sass?sourceMap',
+            'css!sass' // loaders to preprocess CSS
+        )
+      },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
@@ -78,11 +78,11 @@ module.exports = {
   plugins: [
       new ExtractTextPlugin("[name].css", {
               allChunks: true
-          }),
+      }),
       new webpack.ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
         jquery: 'jquery'
-    })
+      })
   ]
 }

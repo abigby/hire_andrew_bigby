@@ -1,3 +1,252 @@
-body {
-  color: peach;
+@import 'helper';
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav.navbar-default {
+  background-color: #fff;
+
+  div.container {
+    div#navbar {
+      ul.nav {
+        li {
+          border-left: 1px solid #f3f3f3;
+
+          &.active {
+            > a {
+              // border-bottom: 3px solid #ef6c00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#top-nav {
+  #navbar {
+    ul.navbar-nav {
+      li {
+        a {
+          color: $teal-green;
+
+          &:hover {
+            color: $teal-green-dark;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-nav {
+  nav.navbar-default {
+    border: 0;
+
+    #navbar {
+      background-color: $teal-green;
+      border: 0;
+
+      ul.navbar-nav {
+        li {
+          border-left: 1px solid #fff;
+
+          a {
+            color: #fff;
+            font-size: 1.5em;
+          }
+
+          &:hover {
+            background-color: $teal-green-dark;
+          }
+
+          &.active {
+            a {
+              background-color: #fff;
+              color: $teal-green;
+              font-weight: bold;
+            }
+          }
+
+          &.dropdown.open {
+            a {
+              color: $teal-green;
+              background-color: #fff;
+            }
+
+            ul.dropdown-menu {
+              border:0;
+              >li {
+                >a {
+                  color: $teal-green;
+                }
+
+                border-bottom: 1px solid #f3f3f3;
+
+                &:last-of-type {
+                  border: 0;
+                }
+
+                &:hover {
+                  >a {
+                    background-color: $teal-green;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//END OF NAVIGATION -----------------------------------------
+
+section.highlight {
+  div.container {
+    h1.big-header {
+      font-weight: 900;
+      font-size: 6em;
+      margin: 0;
+      border: 8px solid #333333;
+      letter-spacing: -4px;
+    }
+  }
+}
+
+
+//SONG CARDS ----------------------------------------------
+
+div.card-content {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #fff;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+
+  a.card-click-target {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  div.cover {
+    -webkit-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+
+    div.cover-image-container {
+      height: 110%;
+      left: -5%;
+      position: relative;
+      top: -5%;
+      width: 110%;
+
+      div.cover-outer-align {
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        div.cover-inner-align {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  div.details {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    padding: 7px 10px 0;
+    position: relative;
+
+    a.card-click-target {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    a.title {
+      margin-bottom: 0;
+      margin-top: 3px;
+      color: #212121;
+      display: block;
+      font-size: 16px;
+      line-height: 18px;
+      max-height: 36px;
+      min-height: 18px;
+      overflow: hidden;
+      text-decoration: none;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    div.subtitle-container {
+      min-height: 22px;
+      display: block;
+      position: relative;
+      width: 100%;
+
+      a.subtitle {
+        color: #616161;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 1px 0;
+        max-width: 132px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    span.price-container {
+      span.display-price {
+        background: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-left: 2px;
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+
+      }
+    }
+  }
+}
+
+footer.main-footer {
+  padding: 4em 0 2em;
+  position: relative;
+  z-index: 2;
+  background-color: black;
+  color: white;
+  font-size: .8125em;
+  line-height: 1.538461538;
+
+  div.container {
+
+  }
 }
