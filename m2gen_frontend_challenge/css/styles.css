@@ -226,6 +226,33 @@ section.highlight div.container h1.big-header {
   letter-spacing: -4px;
 }
 
+aside.blog-aside h2.aside-title {
+  color: #fff;
+  background-color: #333;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0.5em !important;
+  letter-spacing: -4px;
+  font-weight: 400;
+}
+
+aside.blog-aside h2.aside-title:first-of-type {
+  margin-top: 0;
+}
+
+aside.blog-aside div.list-group a.list-group-item {
+  border-radius: 0;
+  display: block;
+}
+
+aside.blog-aside div.list-group h1.top5-chart-num {
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}
+
 div.card-content {
   -webkit-border-radius: 2px;
   border-radius: 2px;
