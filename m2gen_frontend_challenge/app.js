@@ -25,6 +25,10 @@ $(document).ready(function(){
           htmlOutput = '<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-50">';
           htmlOutput += '<div class="card-content">';
           htmlOutput += '<div class="cover">';
+          htmlOutput += '<span class="play-icon">';
+          htmlOutput += '<i class="fa fa-play-circle-o fa-3x" aria-hidden="true">';
+          htmlOutput += '</i>';
+          htmlOutput += '</span>';
           htmlOutput += '<div class="cover-image-container">';
           htmlOutput += '<div class="cover-outer-align">';
           htmlOutput += '<div class="cover-inner-align">';
@@ -67,7 +71,7 @@ $(document).ready(function(){
           htmlOutput += '</span>';
           htmlOutput += '<span class="music is-price-tag buy-button-container is_not_aquired_or_preordered" data-doc-fetch-skip-cache="0" data-doc-fetch-vouchers="0" data-docid="'+ value.id.label +'">';
           htmlOutput += '<span class="display-price pull-right">';
-          htmlOutput += '<i class="fa fa-play-circle-o fa-3x" aria-hidden="true">';
+          htmlOutput += '<i class="fa fa-ellipsis-v" aria-hidden="true">';
           htmlOutput += '</i>';
           htmlOutput += '</span>';
           htmlOutput += '</span>';
@@ -76,6 +80,30 @@ $(document).ready(function(){
           htmlOutput += '</div>';
           htmlOutput += '</div>';
           htmlOutput += '</div>';
+
+          htmlOutput += '<ul class="feed__social__list">';
+          htmlOutput += '<li data-share="facebook" class="feed__social__item icon-facebook">';
+          htmlOutput += '<span class="feed__social__item__span"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></span>';
+          htmlOutput += '<a class="feed__social__item__link" target="_blank"></a></li>';
+
+          htmlOutput += '<li data-share="twitter" class="feed__social__item icon-twitter">';
+          htmlOutput += '<span class="feed__social__item__span"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span>';
+          htmlOutput += '<a class="feed__social__item__link" target="_blank"></a></li>';
+
+          htmlOutput += '<li data-share="Instagram" class="feed__social__item icon-instagram">';
+          htmlOutput += '<span class="feed__social__item__span"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span>';
+          htmlOutput += '<a class="feed__social__item__link" target="_blank"></a></li>';
+
+          htmlOutput += '<li data-share="gplus" class="feed__social__item icon-gplus">';
+          htmlOutput += '<span class="feed__social__item__span"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></span>';
+          htmlOutput += '<a class="feed__social__item__link" target="_blank"></a></li>';
+
+          htmlOutput += '<li data-share="gplus" class="feed__social__item icon-close">';
+          htmlOutput += '<span class="feed__social__item__span"> Close x</span>';
+          htmlOutput += '<a class="feed__social__item__link" target="_blank"></a></li>';
+
+          htmlOutput += '</ul>';
+
           htmlOutput += '</div>';
           htmlOutput += '</div>';
           htmlOutput += '</div>';
@@ -100,4 +128,19 @@ $(document).ready(function(){
       console.log( "Loaded Successfully" );
     });
 
+    $('body').on('click','.display-price', function(){
+      $('.feed__social__list').css({"display":"none"});
+
+      $(this).parentsUntil('.col-xs-6').next('.feed__social__list').css({
+        "display":"block"
+      });
+    });
+
+    $('body').on('click','.icon-close', function(){
+      $('.feed__social__list').css({
+        "display":"none"
+      });
+
+      console.log("clicked");
+    })
 });
