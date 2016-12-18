@@ -1,3 +1,7 @@
+.m-0 {
+  margin: 0;
+}
+
 .mb-10 {
   margin-bottom: 0.714em;
 }
@@ -16,6 +20,10 @@
 
 .mb-50 {
   margin-bottom: 3.571em;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-10 {
@@ -151,16 +159,29 @@ nav.navbar-default {
   background-color: #fff;
 }
 
+nav.navbar-default .navbar-toggle .icon-bar {
+  background-color: #140711;
+}
+
 nav.navbar-default div.container div#navbar ul.nav li {
   border-left: 1px solid #f3f3f3;
 }
 
+.page-header h1#header-slogan {
+  font-weight: bold;
+}
+
+.page-header p#header-muted-slogan {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
 #top-nav #navbar ul.navbar-nav li a {
-  color: #1ab095;
+  color: #140711;
 }
 
 #top-nav #navbar ul.navbar-nav li a:hover {
-  color: #17a289;
+  color: #140711;
   text-decoration: underline;
 }
 
@@ -168,53 +189,54 @@ nav.navbar-default div.container div#navbar ul.nav li {
   border: 0;
 }
 
-#main-nav nav.navbar-default #navbar {
-  background-color: #1ab095;
+#main-nav nav.navbar-default #navbar-main {
+  background-color: #140711;
   border: 0;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li {
   border-left: 1px solid #fff;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li a {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li a {
   color: #fff;
   font-size: 1.5em;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li:hover {
-  background-color: #17a289;
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li:hover {
+  background-color: #2d0c20;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.active a {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.active a {
   background-color: #fff;
-  color: #1ab095;
+  color: #2d0c20;
   font-weight: bold;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open a {
-  color: #1ab095;
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open a {
+  color: #140711;
   background-color: #fff;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open ul.dropdown-menu {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open ul.dropdown-menu {
   border: 0;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open ul.dropdown-menu > li {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open ul.dropdown-menu > li {
   border-bottom: 1px solid #f3f3f3;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open ul.dropdown-menu > li > a {
-  color: #1ab095;
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open ul.dropdown-menu > li > a {
+  color: #140711;
+  font-size: 1em;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open ul.dropdown-menu > li:last-of-type {
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open ul.dropdown-menu > li:last-of-type {
   border: 0;
 }
 
-#main-nav nav.navbar-default #navbar ul.navbar-nav li.dropdown.open ul.dropdown-menu > li:hover > a {
-  background-color: #1ab095;
+#main-nav nav.navbar-default #navbar-main ul.navbar-nav li.dropdown.open ul.dropdown-menu > li:hover > a {
+  background-color: #2d0c20;
   color: #fff;
 }
 
@@ -222,24 +244,25 @@ section.highlight div.container h1.big-header {
   font-weight: 900;
   font-size: 5em;
   margin: 0;
-  border: 8px solid #333333;
+  border: 8px solid #140711;
   letter-spacing: -4px;
+  color: #140711;
 }
 
 aside.blog-aside h2.aside-title {
   color: #fff;
-  background-color: #333;
+  background-color: #140711;
   text-transform: uppercase;
   font-size: 4em;
   text-align: center;
   margin-bottom: 0;
-  margin-top: 0.5em !important;
   letter-spacing: -4px;
   font-weight: 400;
 }
 
-aside.blog-aside h2.aside-title:first-of-type {
-  margin-top: 0;
+aside.blog-aside div.list-group {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 aside.blog-aside div.list-group a.list-group-item {
@@ -253,11 +276,24 @@ aside.blog-aside div.list-group h1.top5-chart-num {
   margin: 0;
 }
 
+div#jsoned {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div#jsoned:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 div.card-content {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background: #fff;
   height: 100%;
   position: relative;
@@ -331,6 +367,12 @@ div.card-content div.details a.title {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+div.card-content div.details a.title:hover {
+  text-decoration: underline;
 }
 
 div.card-content div.details div.subtitle-container {
@@ -411,4 +453,42 @@ footer.main-footer div.container ul.nav li a {
 footer.main-footer div.container ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Sass Bootstrap */
+/* Small devices (tablets, 480px and Smaller) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  h1#header-slogan {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+/* Small devices (tablets, 768px and Smaller) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  h1#header-slogan {
+    font-size: 2em;
+    text-align: center;
+  }
+  p#header-muted-slogan {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0 !important;
+  }
+}
+
+/* Medium devices (desktops, 992px and Smaller) */
+/* Large devices (large desktops, 1200px and Smaller) */
+@media screen and (max-width: 1200px) {
+  .header .navigation ul.primary-menu > li a {
+    font-size: 1.145em;
+    padding: 0 1.24em;
+  }
 }
