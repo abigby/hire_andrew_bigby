@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export class SearchBar extends React.Component {
   render() {
@@ -6,7 +6,7 @@ export class SearchBar extends React.Component {
       <nav className="navbar navbar-inverse">
         <div className="container">
           <div className="col-xs-12 col-md-6">
-            <h1 id="searchbar-phrase" className="text-center">Find Your Favorite of 2016</h1>
+            <h1 id="searchbar-phrase" className="text-center">Find Your Favorites of 2016</h1>
           </div>
           <div className="col-xs-12 col-md-6">
               <div className="input-group m-10">

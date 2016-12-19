@@ -1,6 +1,7 @@
 $(document).ready(function(){
   var dataOutput = [];
   var htmlOutput;
+  var count = 0;
 
   $.ajax({
     url: 'https://itunes.apple.com/us/rss/topalbums/limit=100/json',
@@ -27,8 +28,8 @@ $(document).ready(function(){
           htmlOutput += '</div>';
           htmlOutput += '</div>';
           htmlOutput += '<a class="card-click-target" href="'+ value.link.attributes.href +'" aria-label="'+ value['im:name'].label +'">';
-          htmlOutput += '<span class="movies preordered-overlay-container id-preordered-overlay-container" style="display:none">';
-          htmlOutput += '<span class="preordered-label">Pre-ordered</span></span>';
+          htmlOutput += '<span class="movies preordered-overlay-container id-preordered-overlay-container">';
+          htmlOutput += '<span class="preordered-label"></span></span>';
           htmlOutput += '<span class="preview-overlay-container"  data-docid="' + value.id.label + '"></span>';
           htmlOutput += '</a>';
           htmlOutput += '</div>';
@@ -106,7 +107,7 @@ $(document).ready(function(){
 
       //RENDER HTML OUTPUT TO DOM
       // $('#jsoned').append(htmlOutput);
-      // console.log(dataOutput);
+      // console.log(index);
 
 
     }
@@ -114,6 +115,10 @@ $(document).ready(function(){
   }).done(function() {
       $('#jsoned').append(dataOutput);
       theEvents();
+
+      $('.preordered-label').each(function(index, value){
+        $(this).text(index+1);
+      });
     })
     .fail(function() {
       console.log( "AJAX/Output Failed" );

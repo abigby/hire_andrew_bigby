@@ -2,9 +2,6 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-var DIST_DIR = path.resolve(__dirname, "dist");
-var SRC_DIR = path.resolve(__dirname, "scripts");
-
 
 module.exports = {
   entry: './index.js',
@@ -12,10 +9,15 @@ module.exports = {
   watch: true,
 
   module: {
+    preLoaders: [{
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'jshint-loader'
+    }],
     loaders: [
       {
-        test: /\.js?/,
-        include: SRC_DIR,
+        test: [/\.js$/, /\.es6$/],
+        exclude: 'node_modules',
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-2']
@@ -28,7 +30,7 @@ module.exports = {
       {
       test: /\.styl$/,
           exclude: /node_modules/,
-            loader: 'style!css?sourceMap!stylus?resolve url',
+          loader: 'style!css?sourceMap!stylus?resolve url',
       },
       {
         test: /\.css$/,
