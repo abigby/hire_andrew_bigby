@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.m-10 {
+  margin: 1em;
+}
+
 .mb-10 {
   margin-bottom: 0.714em;
 }
@@ -288,15 +292,20 @@ section.highlight div.container h1.big-header {
   color: #140711;
 }
 
+#searchFilter {
+  width: 100%;
+}
+
 h1#searchbar-phrase {
   margin: 0;
   float: right;
-  margin-top: 8px;
+  margin-top: 14px;
   color: #fff;
   margin-right: 30px;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 100;
+  letter-spacing: 4px;
 }
 
 aside.blog-aside h2.aside-title {
@@ -339,6 +348,16 @@ aside.blog-aside div.list-group a.list-group-item:hover h4, aside.blog-aside div
 
 aside.blog-aside div.list-group a.list-group-item:hover small p {
   text-decoration: none;
+}
+
+aside.blog-aside div.list-group a.list-group-item.trending-btn {
+  text-align: center;
+  color: #fff;
+  background-color: #61183a;
+}
+
+aside.blog-aside div.list-group a.list-group-item.trending-btn:hover {
+  text-decoration: underline;
 }
 
 aside.blog-aside div.list-group h1.top5-chart-num {
@@ -713,6 +732,11 @@ footer.main-footer div.container ul.nav li a:hover {
     font-size: 2em;
     text-align: center;
   }
+  h1#searchbar-phrase {
+    margin-top: 1em;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 /* Small devices (tablets, 768px and Smaller) */
@@ -724,10 +748,29 @@ footer.main-footer div.container ul.nav li a:hover {
     font-size: 2em;
     text-align: center;
   }
+  h1#searchbar-phrase {
+    width: 100%;
+  }
   p#header-muted-slogan {
     font-size: 2em;
-    text-align: center;
+    text-align: center !important;
     margin-top: 0 !important;
+  }
+  div#main-nav nav.navbar {
+    margin-bottom: 0;
+  }
+  div.page-header {
+    margin: 0;
+  }
+  div.page-header img.logo {
+    margin: 0 auto;
+  }
+  .search input {
+    left: -16px;
+    width: 100%;
+  }
+  section.highlight {
+    display: none;
   }
 }
 
