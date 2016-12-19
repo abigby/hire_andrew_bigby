@@ -4,24 +4,14 @@ $(document).ready(function(){
 
   $.ajax({
     url: 'https://itunes.apple.com/us/rss/topalbums/limit=100/json',
-    // url: 'scripts/itunes_export.json',
     dataType: 'json',
-    // type: 'post',
+    type: 'get',
     cache: true,
     success: function(data) {
 
-      // $(data.feed).each(function(index, value){
-      //     $(value.entry).each(function(index, value){
-      //
-      //       $(value).each(function(index, value){
-      //             $(value).each(function(index, value){
-      //               // console.log(value.link.attributes.href);
-      //             });
-      //       });
-      //     });
-      // });
-
       $(data.feed.entry).each(function(index, value){
+
+        $(value).each(function(index, value){
           htmlOutput = '<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 mb-50">';
           htmlOutput += '<div class="card-content">';
           htmlOutput += '<div class="cover">';
@@ -110,37 +100,41 @@ $(document).ready(function(){
 
           dataOutput.push(htmlOutput);
           // $('#jsoned').append(htmlOutput);
+        });
 
       }); //END OF ARRAYS
 
       //RENDER HTML OUTPUT TO DOM
       // $('#jsoned').append(htmlOutput);
       // console.log(dataOutput);
+
+
     }
 
   }).done(function() {
-    $('#jsoned').append(dataOutput);
+      $('#jsoned').append(dataOutput);
+      theEvents();
     })
     .fail(function() {
-      console.log( "AJAX/Output Issue" );
+      console.log( "AJAX/Output Failed" );
     })
     .always(function() {
-      console.log( "Loaded Successfully" );
+      console.log( "Data Loaded Successfully" );
     });
 
-    $('body').on('click','.display-price', function(){
-      $('.feed__social__list').css({"display":"none"});
+    function theEvents() {
+      $('body').on('click','.display-price', function(){
+        $('.feed__social__list').css({"display":"none"});
 
-      $(this).parentsUntil('.col-xs-6').next('.feed__social__list').css({
-        "display":"block"
-      });
-    });
-
-    $('body').on('click','.icon-close', function(){
-      $('.feed__social__list').css({
-        "display":"none"
+        $(this).parentsUntil('.col-xs-6').next('.feed__social__list').css({
+          "display":"block"
+        });
       });
 
-      console.log("clicked");
-    })
+      $('body').on('click','.icon-close', function(){
+        $('.feed__social__list').css({
+          "display":"none"
+        });
+      });
+    }
 });
