@@ -1,0 +1,145 @@
+@import 'fonts';
+@import 'colors';
+@import 'variables';
+
+body#about-inner {
+  background: #fff !important;
+
+  div.my-portrait {
+    figure {
+      margin: 0 auto;
+      left: 0;
+      top: 40%;
+      right: 0;
+      bottom: 0;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        height: auto;
+        border-radius: 150px;
+        border: 11px solid #fff;
+      }
+
+      figcaption {
+        color: #fff;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+
+        h2, h3 {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  div.skills-bifold {
+    margin: 5rem auto;
+
+    div.developer {
+      background-color: $orange;
+    }
+
+    div.designer {
+      background-color: $orange-light;
+    }
+
+    div.designer,div.developer {
+      min-height: 210px;
+
+      .intro, .general-text {
+        color: #fff;
+      }
+
+      .intro {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .general-text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+
+      div.list-group {
+        a  {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          font-size: 1rem;
+
+          &:hover {
+            cursor: default;
+          }
+
+          div.progress {
+            background-color: transparent;
+            box-shadow: none;
+            height: 12px;
+            border-radius: 0;
+            margin: 0;
+
+            div.progress-bar {
+              line-height: 12px;
+              background-color: #fff;
+              box-shadow: none;
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer#main-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0.8rem;
+
+    address.footer-address {
+      color: $orange;
+    }
+
+    nav.navbar {
+      margin: 0;
+
+      &.navbar-default {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+
+        ul {
+          float: none;
+          margin: 0 auto;
+          position: relative;
+          width: 330px;
+
+          li {
+            a {
+                background-color: transparent;
+                color: $orange;
+
+                &:hover {
+                  opacity: 0.7;
+                }
+            }
+          }
+        }
+      }
+
+      div.container {
+        margin: 0 auto 0;
+      }
+    }
+  }
+}

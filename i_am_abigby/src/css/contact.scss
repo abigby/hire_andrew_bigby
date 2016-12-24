@@ -1,0 +1,129 @@
+@import 'fonts';
+@import 'colors';
+@import 'variables';
+
+body#contact-inner {
+  background: #fff !important;
+
+div.hire-me-block {
+
+  .intro, .general-text {
+    text-align: left;
+    font-size: 1rem;
+  }
+  div.my-portrait {
+    figure {
+      margin: 0 auto;
+      left: 0;
+      top: 40%;
+      right: 0;
+      bottom: 0;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+        border-radius: 150px;
+        border: 11px solid #fff;
+      }
+
+      figcaption {
+        color: #fff;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+
+        h2, h3 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.hire-me-block {
+  margin: 4rem auto;
+  margin-top: 2rem;
+  color: #fff;
+
+  a {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem auto;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 0.2rem;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-links {
+    background-color: $orange-light;
+    min-height: 250px;
+  }
+
+  .contact-form {
+    background-color: $orange;
+    min-height: 250px;
+
+    #success_message{ display: none;}
+
+    #contact_form {
+      .control-label {
+        font-size: 0.8rem;
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+  }
+}
+
+  footer#main-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0.8rem;
+
+    address.footer-address {
+      color: $orange;
+    }
+
+    nav.navbar {
+      margin: 0;
+
+      &.navbar-default {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+
+        ul {
+          float: none;
+          margin: 0 auto;
+          position: relative;
+          width: 330px;
+
+          li {
+            a {
+                background-color: transparent;
+                color: $orange;
+
+                &:hover {
+                  opacity: 0.7;
+                }
+            }
+          }
+        }
+      }
+
+      div.container {
+        margin: 0 auto 0;
+      }
+    }
+  }
+}

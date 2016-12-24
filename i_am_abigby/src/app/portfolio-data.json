@@ -1,0 +1,35 @@
+
+{ "entry":[
+
+         { "name":"Top 100 Charts",
+           "type": "Sample Mockup",
+           "tools":["HTML5", "SASS/CSS3", "Bootstrap", "ReactJS", "Font Awesome"],
+           "thumbnail":"img/portfolio/thumbnails/top_100_charts.jpg",
+           "link":"https://abigby.github.io/hire_andrew_bigby/m2gen_frontend_challenge/"
+         },{
+           "name":"Language Access",
+           "type": "Project Prototype",
+           "tools":["HTML5", "LESS/CSS3", "AJAX", "jQuery"],
+           "thumbnail":"img/portfolio/thumbnails/language_access.jpg",
+           "link":"http://abigby.com/languageAccessView.php"
+         },{
+           "name":"Pastries Crew",
+           "type": "Sample Mockup",
+           "tools":["HTML5", "CSS3", "jQuery", "AJAX", "JSON"],
+           "thumbnail":"img/portfolio/thumbnails/pastries_crew.jpg",
+           "link":"http://abigby.com/ajax/index.html"
+         },{
+           "name":"Tracking Fleet",
+           "type": "Prototype",
+           "tools":["HTML5", "CSS3", "jQuery", "AJAX", "JSON"],
+           "thumbnail":"img/portfolio/thumbnails/fleet_tracking.jpg",
+           "link":"https://www.abigby.com/iweb.html"
+         },{
+           "name":"Graphic Design",
+           "type": "UI/UX | Branding",
+           "tools":["HTML5", "CSS3", "jQuery", "AJAX", "JSON"],
+           "thumbnail":"img/portfolio/thumbnails/greatest_hits.jpg",
+           "link":"https://onedrive.live.com/?authkey=%21AKVn_r0rOiaeeI0&id=8da5d15060d66f79%21902&cid=8DA5D15060D66F79"
+         }
+    ]
+  }
