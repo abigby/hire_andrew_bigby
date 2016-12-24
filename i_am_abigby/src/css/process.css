@@ -1,23 +1,23 @@
-body#process-inner {
+div#process-inner {
   background: #fff !important;
 }
 
-body#process-inner div.panel-default {
+div#process-inner div.panel-default {
   border: 0;
 }
 
-body#process-inner div.panel-default.panel {
+div#process-inner div.panel-default.panel {
   background-color: #f5f5f5;
   border-radius: 0;
   min-height: 420px;
 }
 
-body#process-inner div.panel-default.panel h2 {
+div#process-inner div.panel-default.panel h2 {
   font-size: 1rem;
   font-weight: normal;
 }
 
-body#process-inner div.panel-default div.panel-heading {
+div#process-inner div.panel-default div.panel-heading {
   background-color: #d96c27;
   text-transform: uppercase;
   border-color: white;
@@ -25,7 +25,7 @@ body#process-inner div.panel-default div.panel-heading {
   font-size: 1.2rem;
 }
 
-body#process-inner div.panel-default div.panel-body {
+div#process-inner div.panel-default div.panel-body {
   color: #d96c27;
   font-size: 0.8rem;
   font-weight: 300;
@@ -33,37 +33,37 @@ body#process-inner div.panel-default div.panel-body {
   letter-spacing: normal;
 }
 
-body#process-inner div.panel-default div.panel-body h2 {
+div#process-inner div.panel-default div.panel-body h2 {
   color: #d96c27;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-body#process-inner div.panel-default div.panel-body ol li {
+div#process-inner div.panel-default div.panel-body ol li {
   display: block;
 }
 
-body#process-inner div.skills-section {
+div#process-inner div.skills-section {
   background-color: #d96c27;
   padding: 2rem 0;
   margin: 5rem auto;
 }
 
-body#process-inner div.skills-section h2 {
+div#process-inner div.skills-section h2 {
   color: #fff;
   margin-bottom: 5rem;
   font-weight: 300;
   text-align: center;
 }
 
-body#process-inner div.skills-section img {
+div#process-inner div.skills-section img {
   width: 100%;
   height: auto;
   display: block;
   position: relative;
 }
 
-body#process-inner footer#main-footer {
+div#process-inner footer#main-footer {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -71,36 +71,36 @@ body#process-inner footer#main-footer {
   font-size: 0.8rem;
 }
 
-body#process-inner footer#main-footer address.footer-address {
+div#process-inner footer#main-footer address.footer-address {
   color: #d96c27;
 }
 
-body#process-inner footer#main-footer nav.navbar {
+div#process-inner footer#main-footer nav.navbar {
   margin: 0;
 }
 
-body#process-inner footer#main-footer nav.navbar.navbar-default {
+div#process-inner footer#main-footer nav.navbar.navbar-default {
   background-color: transparent;
   border-radius: 0;
   border: none;
 }
 
-body#process-inner footer#main-footer nav.navbar.navbar-default ul {
+div#process-inner footer#main-footer nav.navbar.navbar-default ul {
   float: none;
   margin: 0 auto;
   position: relative;
   width: 330px;
 }
 
-body#process-inner footer#main-footer nav.navbar.navbar-default ul li a {
+div#process-inner footer#main-footer nav.navbar.navbar-default ul li a {
   background-color: transparent;
   color: #d96c27;
 }
 
-body#process-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
+div#process-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
   opacity: 0.7;
 }
 
-body#process-inner footer#main-footer nav.navbar div.container {
+div#process-inner footer#main-footer nav.navbar div.container {
   margin: 0 auto 0;
 }

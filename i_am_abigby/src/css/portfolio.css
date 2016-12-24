@@ -1,4 +1,4 @@
-body#portfolio-inner {
+div#portfolio-inner {
   background: #fff !important;
 }
 
@@ -14,25 +14,25 @@ body#portfolio-inner {
   }
 }
 
-body#portfolio-inner div#jsoned {
+div#portfolio-inner div#jsoned {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-body#portfolio-inner div#jsoned:after {
+div#portfolio-inner div#jsoned:after {
   content: '';
   display: block;
   clear: both;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] {
+div#portfolio-inner div#jsoned div[class^="col-"] {
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background: #fff;
@@ -49,7 +49,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:after {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -61,7 +61,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:after {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
   -webkit-box-shadow: 0 10px 3px 2px rgba(0, 0, 0, 0.07);
@@ -73,15 +73,15 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover span.play-icon {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover span.play-icon {
   display: block !important;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover:after {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content:hover:after {
   opacity: 1;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click-target {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click-target {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -90,7 +90,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click
   z-index: 9999999999999;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click-target span.extra-label {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click-target span.extra-label {
   position: absolute;
   display: none;
   color: #fff;
@@ -109,7 +109,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content a.card-click
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.5);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover {
   -webkit-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
   background-color: #f5f5f5;
@@ -117,21 +117,21 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover {
   position: relative;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:hover div.project-image-container div.cover-outer-align div.cover-inner-align:before {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:hover div.project-image-container div.cover-outer-align div.cover-inner-align:before {
   background: linear-gradient(to top, rgba(255, 0, 0, 0) 15%, #140817);
   opacity: 0;
   transition: opacity 0.7s ease-in-out;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:hover:after {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:hover:after {
   animation: sheen 1s forwards;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:focus::after {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:focus::after {
   animation: sheen 1s forwards;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:after {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:after {
   content: '';
   position: absolute;
   top: -50%;
@@ -142,7 +142,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover:af
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container {
   height: 110%;
   left: -5%;
   position: relative;
@@ -150,24 +150,24 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover di
   width: 110%;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align div.cover-inner-align {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align div.cover-inner-align {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align div.cover-inner-align img {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover div.project-image-container div.cover-outer-align div.cover-inner-align img {
   width: 100%;
   display: block;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover span.view-icon {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover span.view-icon {
   display: none;
   position: absolute;
   z-index: 999;
@@ -180,12 +180,12 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover sp
   animation: slide-in 1s forwards;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover span.view-icon i.fa {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.cover span.view-icon i.fa {
   -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
@@ -196,7 +196,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details 
   border-top: 3px solid #d96c27;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.card-click-target {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.card-click-target {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -204,7 +204,7 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details 
   top: 0;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.title {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.title {
   margin-bottom: 0;
   margin-top: 3px;
   color: #212121;
@@ -222,18 +222,18 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details 
   text-transform: uppercase;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.title:hover {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details a.title:hover {
   text-decoration: underline;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container {
   min-height: 22px;
   display: block;
   position: relative;
   width: 100%;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container a.subtitle {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container a.subtitle {
   color: #616161;
   display: inline-block;
   font-size: 13px;
@@ -243,11 +243,11 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details 
   white-space: nowrap;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container a.subtitle:hover {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details div.subtitle-container a.subtitle:hover {
   text-decoration: none;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details span.icon-menu-container span.menu-container {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details span.icon-menu-container span.menu-container {
   background: #fff;
   cursor: pointer;
   display: inline-block;
@@ -260,19 +260,19 @@ body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details 
   text-transform: uppercase;
 }
 
-body#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details span.icon-menu-container span.menu-container i.fa {
+div#portfolio-inner div#jsoned div[class^="col-"] div.card-content div.details span.icon-menu-container span.menu-container i.fa {
   font-size: 1.2em;
   position: relative;
   top: 50%;
   transform: translate(-50%, 100%);
 }
 
-body#portfolio-inner .feed__social.active {
+div#portfolio-inner .feed__social.active {
   display: block;
   opacity: 1;
 }
 
-body#portfolio-inner .feed__social__list {
+div#portfolio-inner .feed__social__list {
   display: none;
   opacity: 1;
   position: absolute;
@@ -290,7 +290,7 @@ body#portfolio-inner .feed__social__list {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-body#portfolio-inner .feed__social__list .feed__social__title {
+div#portfolio-inner .feed__social__list .feed__social__title {
   text-align: center;
   background-color: #ddd;
   text-transform: uppercase;
@@ -298,7 +298,7 @@ body#portfolio-inner .feed__social__list .feed__social__title {
   color: #fff;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item {
+div#portfolio-inner .feed__social__list .feed__social__item {
   font-size: 1em;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
@@ -309,23 +309,23 @@ body#portfolio-inner .feed__social__list .feed__social__item {
   display: block;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-facebook i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-facebook i {
   color: #4968ab;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-twitter i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-twitter i {
   color: #01b0ef;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-instagram i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-instagram i {
   color: #01b0ef;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-gplus span, body#portfolio-inner .feed__social__list .feed__social__item.icon-gplus i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-gplus span, div#portfolio-inner .feed__social__list .feed__social__item.icon-gplus i {
   color: #dd4b39;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-close {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-close {
   padding-top: 7px;
   padding-left: 11px;
   padding-right: 11px;
@@ -335,41 +335,41 @@ body#portfolio-inner .feed__social__list .feed__social__item.icon-close {
   margin: 0;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover span, body#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover span, div#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover i {
   text-decoration: underline;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-close span, body#portfolio-inner .feed__social__list .feed__social__item.icon-close i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-close span, div#portfolio-inner .feed__social__list .feed__social__item.icon-close i {
   color: #dd4b39;
   text-transform: none;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-close:hover {
   cursor: pointer;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-pinterest i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-pinterest i {
   color: #ea191e;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-tumblr i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-tumblr i {
   color: #34465e;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-whatsapp i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-whatsapp i {
   color: #29a71a;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item.icon-email i {
+div#portfolio-inner .feed__social__list .feed__social__item.icon-email i {
   color: #292929;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item .feed__social__item__span {
+div#portfolio-inner .feed__social__list .feed__social__item .feed__social__item__span {
   color: #000;
   text-transform: capitalize;
 }
 
-body#portfolio-inner .feed__social__list .feed__social__item .feed__social__item__link {
+div#portfolio-inner .feed__social__list .feed__social__item .feed__social__item__link {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -377,7 +377,7 @@ body#portfolio-inner .feed__social__list .feed__social__item .feed__social__item
   left: 0;
 }
 
-body#portfolio-inner footer#main-footer {
+div#portfolio-inner footer#main-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -385,36 +385,36 @@ body#portfolio-inner footer#main-footer {
   font-size: 0.8rem;
 }
 
-body#portfolio-inner footer#main-footer address.footer-address {
+div#portfolio-inner footer#main-footer address.footer-address {
   color: #d96c27;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar {
+div#portfolio-inner footer#main-footer nav.navbar {
   margin: 0;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar.navbar-default {
+div#portfolio-inner footer#main-footer nav.navbar.navbar-default {
   background-color: transparent;
   border-radius: 0;
   border: none;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar.navbar-default ul {
+div#portfolio-inner footer#main-footer nav.navbar.navbar-default ul {
   float: none;
   margin: 0 auto;
   position: relative;
   width: 330px;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar.navbar-default ul li a {
+div#portfolio-inner footer#main-footer nav.navbar.navbar-default ul li a {
   background-color: transparent;
   color: #d96c27;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
+div#portfolio-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
   opacity: 0.7;
 }
 
-body#portfolio-inner footer#main-footer nav.navbar div.container {
+div#portfolio-inner footer#main-footer nav.navbar div.container {
   margin: 0 auto 0;
 }

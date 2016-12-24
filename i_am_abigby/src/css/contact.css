@@ -1,13 +1,13 @@
-body#contact-inner {
+div#contact-inner {
   background: #fff !important;
 }
 
-body#contact-inner div.hire-me-block .intro, body#contact-inner div.hire-me-block .general-text {
+div#contact-inner div.hire-me-block .intro, div#contact-inner div.hire-me-block .general-text {
   text-align: left;
   font-size: 1rem;
 }
 
-body#contact-inner div.hire-me-block div.my-portrait figure {
+div#contact-inner div.hire-me-block div.my-portrait figure {
   margin: 0 auto;
   left: 0;
   top: 40%;
@@ -15,7 +15,7 @@ body#contact-inner div.hire-me-block div.my-portrait figure {
   bottom: 0;
 }
 
-body#contact-inner div.hire-me-block div.my-portrait figure img {
+div#contact-inner div.hire-me-block div.my-portrait figure img {
   display: block;
   margin: 0 auto;
   width: 300px;
@@ -24,7 +24,7 @@ body#contact-inner div.hire-me-block div.my-portrait figure img {
   border: 11px solid #fff;
 }
 
-body#contact-inner div.hire-me-block div.my-portrait figure figcaption {
+div#contact-inner div.hire-me-block div.my-portrait figure figcaption {
   color: #fff;
   text-align: center;
   margin-top: 0.5rem;
@@ -32,17 +32,17 @@ body#contact-inner div.hire-me-block div.my-portrait figure figcaption {
   font-size: 1rem;
 }
 
-body#contact-inner div.hire-me-block div.my-portrait figure figcaption h2, body#contact-inner div.hire-me-block div.my-portrait figure figcaption h3 {
+div#contact-inner div.hire-me-block div.my-portrait figure figcaption h2, div#contact-inner div.hire-me-block div.my-portrait figure figcaption h3 {
   color: #fff;
 }
 
-body#contact-inner .hire-me-block {
+div#contact-inner .hire-me-block {
   margin: 4rem auto;
   margin-top: 2rem;
   color: #fff;
 }
 
-body#contact-inner .hire-me-block a {
+div#contact-inner .hire-me-block a {
   display: block;
   font-size: 1rem;
   color: #fff;
@@ -52,32 +52,32 @@ body#contact-inner .hire-me-block a {
   padding: 0.2rem;
 }
 
-body#contact-inner .hire-me-block p {
+div#contact-inner .hire-me-block p {
   font-size: 1rem;
   text-align: center;
 }
 
-body#contact-inner .hire-me-block .contact-links {
+div#contact-inner .hire-me-block .contact-links {
   background-color: #e87932;
   min-height: 250px;
 }
 
-body#contact-inner .hire-me-block .contact-form {
+div#contact-inner .hire-me-block .contact-form {
   background-color: #d96c27;
   min-height: 250px;
 }
 
-body#contact-inner .hire-me-block .contact-form #success_message {
+div#contact-inner .hire-me-block .contact-form #success_message {
   display: none;
 }
 
-body#contact-inner .hire-me-block .contact-form #contact_form .control-label {
+div#contact-inner .hire-me-block .contact-form #contact_form .control-label {
   font-size: 0.8rem;
   font-weight: normal;
   text-align: left;
 }
 
-body#contact-inner footer#main-footer {
+div#contact-inner footer#main-footer {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -85,36 +85,36 @@ body#contact-inner footer#main-footer {
   font-size: 0.8rem;
 }
 
-body#contact-inner footer#main-footer address.footer-address {
+div#contact-inner footer#main-footer address.footer-address {
   color: #d96c27;
 }
 
-body#contact-inner footer#main-footer nav.navbar {
+div#contact-inner footer#main-footer nav.navbar {
   margin: 0;
 }
 
-body#contact-inner footer#main-footer nav.navbar.navbar-default {
+div#contact-inner footer#main-footer nav.navbar.navbar-default {
   background-color: transparent;
   border-radius: 0;
   border: none;
 }
 
-body#contact-inner footer#main-footer nav.navbar.navbar-default ul {
+div#contact-inner footer#main-footer nav.navbar.navbar-default ul {
   float: none;
   margin: 0 auto;
   position: relative;
   width: 330px;
 }
 
-body#contact-inner footer#main-footer nav.navbar.navbar-default ul li a {
+div#contact-inner footer#main-footer nav.navbar.navbar-default ul li a {
   background-color: transparent;
   color: #d96c27;
 }
 
-body#contact-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
+div#contact-inner footer#main-footer nav.navbar.navbar-default ul li a:hover {
   opacity: 0.7;
 }
 
-body#contact-inner footer#main-footer nav.navbar div.container {
+div#contact-inner footer#main-footer nav.navbar div.container {
   margin: 0 auto 0;
 }
