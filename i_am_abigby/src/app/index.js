@@ -57,4 +57,19 @@ class Main extends React.Component {
   }
 }
 
-render(<Main/>, window.ocument.getElementById('main'));
+
+
+function run() {
+  render(<Main/>, document.getElementById('main'));
+  console.log("ran render");
+}
+
+const loadedStates = ['complete', 'loaded', 'interactive'];
+
+if(loadedStates.includes(document.readyState) && document.body) {
+  run();
+} else {
+  window.addEventListener('DOMContentLoaded', run, false);
+}
+
+console.log("abigby portfolio");

@@ -28,7 +28,7 @@ module.exports = {
         loader: 'style-loader!css-loader!less-loader'
       },
       {
-      test: /\.styl$/,
+          test: /\.styl$/,
           exclude: /node_modules/,
           loader: 'style!css?sourceMap!stylus?resolve url',
       },

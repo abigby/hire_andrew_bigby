@@ -9,9 +9,21 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
     </head>
-    <body id="main">
-      
-        <script src='/app/bundle.js'></script>
+    <body>
+
+        <div id="main"></div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                // $('body').html('\x3Cscript type="text/javascript" src="/app/bundle.js">\x3C/script>');
+
+                // setTimeout(function(){ $('body').html('\x3Cscript async type="text/javascript" src="/app/bundle.js">\x3C/script>'); alert("Hello"); }, 3000);
+            });
+        </script>
+        <script defer src="/app/bundle.js"></script>
     </body>
 </html>

@@ -16,6 +16,12 @@ class Portfolio extends React.Component {
 
   componentWillMount() {
     //Called the first time the component is loaded right before the component is added to the page
+    const script = document.createElement("script");
+
+     script.src = "/app/bundle.js";
+     script.async = true;
+
+     document.body.appendChild(script);
   }
   componentDidMount() {
     //Called after the component has been rendered into the page
@@ -116,4 +122,4 @@ class Portfolio extends React.Component {
   }
 }
 
-render(<Portfolio/>, window.document.getElementById("jsoned"));
+render(<Portfolio/>, window.document.getElementById("portfolio-inner"));
